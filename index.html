@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Transferencia - rrms.mx</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 { color: #ff3c3c; }
+    p { color: #ccc; font-size: 18px; }
+    .cuenta { font-size: 20px; font-weight: bold; color: #ffcc00; }
+
+    model-viewer {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+      animation: logoBounce 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes logoBounce {
+      0% { transform: scale(0.8); opacity: 0; }
+      50% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+<model-viewer src="logo.glb" alt="Logo 3D" auto-rotate camera-controls background-color="#111"></model-viewer>
+
+<h1>Transferencia Bancaria</h1>
+<p>Realiza tu pago a la siguiente cuenta:</p>
+<p class="cuenta">BBVA - 1234 5678 9012 3456</p>
+<p>Envía tu comprobante por WhatsApp al <strong>+52 123 456 7890</strong></p>
+
+</body>
+</html>
